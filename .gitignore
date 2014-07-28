@@ -21,6 +21,8 @@ lib-cov
 *.out
 *.pid
 *.gz
+.floo
+.flooignore
 
 pids
 logs
