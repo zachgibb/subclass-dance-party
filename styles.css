@@ -25,3 +25,80 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.dancer.green {
+  border: none;
+  border-radius: 10px; 
+  background-image: url('http://i.stack.imgur.com/Mmww2.png');
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.dancer.square {
+  border-color: blue;
+  border-radius: 0px;
+  -webkit-animation: infinite-spinning 3s infinite; /* Safari 4+ */
+  -moz-animation:    infinite-spinning 3s infinite; /* Fx 5+ */
+  -o-animation:      infinite-spinning 3s infinite; /* Opera 12+ */
+  animation:         infinite-spinning 3s infinite; /* IE 10+, Fx 29+ */
+}
+span.dancer.congo {
+  -webkit-animation: congo-line 10s infinite; /* Safari 4+ */
+  -moz-animation:    congo-line 3s infinite; /* Fx 5+ */
+  -o-animation:      congo-line 3s infinite; /* Opera 12+ */
+  animation:         congo-line 3s infinite;
+}
+@-webkit-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes congo-line {
+  to {
+    transform: translateX(1400px);
+  }
+}
+@-moz-keyframes congo-line {
+  to {
+    transform: translateX(100%);
+  }
+}
+@-o-keyframes congo-line {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes congo-line {
+  to {
+    transform: translateX(100%);
+  }
+}
